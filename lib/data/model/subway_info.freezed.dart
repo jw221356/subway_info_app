@@ -20,13 +20,13 @@ SubwayInfo _$SubwayInfoFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$SubwayInfo {
-  String get updnLine => throw _privateConstructorUsedError;
-  String get statnNm => throw _privateConstructorUsedError;
-  String get trainLineNm => throw _privateConstructorUsedError;
-  String get arvlMsg2 => throw _privateConstructorUsedError;
-  String get arvlMsg3 => throw _privateConstructorUsedError;
-  String get trnsitCo => throw _privateConstructorUsedError;
-  String get barvlDt => throw _privateConstructorUsedError;
+  String? get updnLine => throw _privateConstructorUsedError;
+  String? get statnNm => throw _privateConstructorUsedError;
+  String? get trainLineNm => throw _privateConstructorUsedError;
+  String? get arvlMsg2 => throw _privateConstructorUsedError;
+  String? get arvlMsg3 => throw _privateConstructorUsedError;
+  String? get trnsitCo => throw _privateConstructorUsedError;
+  String? get barvlDt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -41,13 +41,13 @@ abstract class $SubwayInfoCopyWith<$Res> {
       _$SubwayInfoCopyWithImpl<$Res, SubwayInfo>;
   @useResult
   $Res call(
-      {String updnLine,
-      String statnNm,
-      String trainLineNm,
-      String arvlMsg2,
-      String arvlMsg3,
-      String trnsitCo,
-      String barvlDt});
+      {String? updnLine,
+      String? statnNm,
+      String? trainLineNm,
+      String? arvlMsg2,
+      String? arvlMsg3,
+      String? trnsitCo,
+      String? barvlDt});
 }
 
 /// @nodoc
@@ -63,43 +63,43 @@ class _$SubwayInfoCopyWithImpl<$Res, $Val extends SubwayInfo>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? updnLine = null,
-    Object? statnNm = null,
-    Object? trainLineNm = null,
-    Object? arvlMsg2 = null,
-    Object? arvlMsg3 = null,
-    Object? trnsitCo = null,
-    Object? barvlDt = null,
+    Object? updnLine = freezed,
+    Object? statnNm = freezed,
+    Object? trainLineNm = freezed,
+    Object? arvlMsg2 = freezed,
+    Object? arvlMsg3 = freezed,
+    Object? trnsitCo = freezed,
+    Object? barvlDt = freezed,
   }) {
     return _then(_value.copyWith(
-      updnLine: null == updnLine
+      updnLine: freezed == updnLine
           ? _value.updnLine
           : updnLine // ignore: cast_nullable_to_non_nullable
-              as String,
-      statnNm: null == statnNm
+              as String?,
+      statnNm: freezed == statnNm
           ? _value.statnNm
           : statnNm // ignore: cast_nullable_to_non_nullable
-              as String,
-      trainLineNm: null == trainLineNm
+              as String?,
+      trainLineNm: freezed == trainLineNm
           ? _value.trainLineNm
           : trainLineNm // ignore: cast_nullable_to_non_nullable
-              as String,
-      arvlMsg2: null == arvlMsg2
+              as String?,
+      arvlMsg2: freezed == arvlMsg2
           ? _value.arvlMsg2
           : arvlMsg2 // ignore: cast_nullable_to_non_nullable
-              as String,
-      arvlMsg3: null == arvlMsg3
+              as String?,
+      arvlMsg3: freezed == arvlMsg3
           ? _value.arvlMsg3
           : arvlMsg3 // ignore: cast_nullable_to_non_nullable
-              as String,
-      trnsitCo: null == trnsitCo
+              as String?,
+      trnsitCo: freezed == trnsitCo
           ? _value.trnsitCo
           : trnsitCo // ignore: cast_nullable_to_non_nullable
-              as String,
-      barvlDt: null == barvlDt
+              as String?,
+      barvlDt: freezed == barvlDt
           ? _value.barvlDt
           : barvlDt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ) as $Val);
   }
 }
@@ -113,13 +113,13 @@ abstract class _$$SubwayInfoImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String updnLine,
-      String statnNm,
-      String trainLineNm,
-      String arvlMsg2,
-      String arvlMsg3,
-      String trnsitCo,
-      String barvlDt});
+      {String? updnLine,
+      String? statnNm,
+      String? trainLineNm,
+      String? arvlMsg2,
+      String? arvlMsg3,
+      String? trnsitCo,
+      String? barvlDt});
 }
 
 /// @nodoc
@@ -133,43 +133,43 @@ class __$$SubwayInfoImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? updnLine = null,
-    Object? statnNm = null,
-    Object? trainLineNm = null,
-    Object? arvlMsg2 = null,
-    Object? arvlMsg3 = null,
-    Object? trnsitCo = null,
-    Object? barvlDt = null,
+    Object? updnLine = freezed,
+    Object? statnNm = freezed,
+    Object? trainLineNm = freezed,
+    Object? arvlMsg2 = freezed,
+    Object? arvlMsg3 = freezed,
+    Object? trnsitCo = freezed,
+    Object? barvlDt = freezed,
   }) {
     return _then(_$SubwayInfoImpl(
-      updnLine: null == updnLine
+      updnLine: freezed == updnLine
           ? _value.updnLine
           : updnLine // ignore: cast_nullable_to_non_nullable
-              as String,
-      statnNm: null == statnNm
+              as String?,
+      statnNm: freezed == statnNm
           ? _value.statnNm
           : statnNm // ignore: cast_nullable_to_non_nullable
-              as String,
-      trainLineNm: null == trainLineNm
+              as String?,
+      trainLineNm: freezed == trainLineNm
           ? _value.trainLineNm
           : trainLineNm // ignore: cast_nullable_to_non_nullable
-              as String,
-      arvlMsg2: null == arvlMsg2
+              as String?,
+      arvlMsg2: freezed == arvlMsg2
           ? _value.arvlMsg2
           : arvlMsg2 // ignore: cast_nullable_to_non_nullable
-              as String,
-      arvlMsg3: null == arvlMsg3
+              as String?,
+      arvlMsg3: freezed == arvlMsg3
           ? _value.arvlMsg3
           : arvlMsg3 // ignore: cast_nullable_to_non_nullable
-              as String,
-      trnsitCo: null == trnsitCo
+              as String?,
+      trnsitCo: freezed == trnsitCo
           ? _value.trnsitCo
           : trnsitCo // ignore: cast_nullable_to_non_nullable
-              as String,
-      barvlDt: null == barvlDt
+              as String?,
+      barvlDt: freezed == barvlDt
           ? _value.barvlDt
           : barvlDt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -190,19 +190,19 @@ class _$SubwayInfoImpl with DiagnosticableTreeMixin implements _SubwayInfo {
       _$$SubwayInfoImplFromJson(json);
 
   @override
-  final String updnLine;
+  final String? updnLine;
   @override
-  final String statnNm;
+  final String? statnNm;
   @override
-  final String trainLineNm;
+  final String? trainLineNm;
   @override
-  final String arvlMsg2;
+  final String? arvlMsg2;
   @override
-  final String arvlMsg3;
+  final String? arvlMsg3;
   @override
-  final String trnsitCo;
+  final String? trnsitCo;
   @override
-  final String barvlDt;
+  final String? barvlDt;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -263,31 +263,31 @@ class _$SubwayInfoImpl with DiagnosticableTreeMixin implements _SubwayInfo {
 
 abstract class _SubwayInfo implements SubwayInfo {
   const factory _SubwayInfo(
-      {required final String updnLine,
-      required final String statnNm,
-      required final String trainLineNm,
-      required final String arvlMsg2,
-      required final String arvlMsg3,
-      required final String trnsitCo,
-      required final String barvlDt}) = _$SubwayInfoImpl;
+      {required final String? updnLine,
+      required final String? statnNm,
+      required final String? trainLineNm,
+      required final String? arvlMsg2,
+      required final String? arvlMsg3,
+      required final String? trnsitCo,
+      required final String? barvlDt}) = _$SubwayInfoImpl;
 
   factory _SubwayInfo.fromJson(Map<String, dynamic> json) =
       _$SubwayInfoImpl.fromJson;
 
   @override
-  String get updnLine;
+  String? get updnLine;
   @override
-  String get statnNm;
+  String? get statnNm;
   @override
-  String get trainLineNm;
+  String? get trainLineNm;
   @override
-  String get arvlMsg2;
+  String? get arvlMsg2;
   @override
-  String get arvlMsg3;
+  String? get arvlMsg3;
   @override
-  String get trnsitCo;
+  String? get trnsitCo;
   @override
-  String get barvlDt;
+  String? get barvlDt;
   @override
   @JsonKey(ignore: true)
   _$$SubwayInfoImplCopyWith<_$SubwayInfoImpl> get copyWith =>
