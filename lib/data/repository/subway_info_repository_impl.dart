@@ -9,6 +9,11 @@ class SubwayInfoImpl implements SubwayInfoRepository {
 
   @override
   Future<SubwayInfo> getSubwayInfoList(String query) async {
-    final response = await _subwayApi.getSubwayInfoList(query);
+    try {
+      final response = await _subwayApi.getSubwayInfoList(query);
+      return SubwayInfo.fromJson(response as Map<String, Object?>);
+    } catch (e) {
+      throw Exception('subway info');
+    }
   }
 }

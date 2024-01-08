@@ -6,7 +6,8 @@ void main() {
     final api = SubwayApi();
 
     final result = await api.getSubwayInfoList('서울');
-    
+
     expect(result, isNotNull);
+    print(result);
   });
 }
