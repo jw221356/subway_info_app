@@ -8,14 +8,15 @@ part 'subway_info.g.dart';
 @freezed
 class SubwayInfo with _$SubwayInfo {
   const factory SubwayInfo({
-    required String updnLine,
-    required String statnNm,
-    required String trainLineNm,
-    required String arvlMsg2,
-    required String arvlMsg3,
-    required String trnsitCo,
-    required String barvlDt,
+    @Default('') required String updnLine,
+    @Default('') required String statnNm,
+    @Default('') required String trainLineNm,
+    @Default('') required String arvlMsg2,
+    @Default('') required String arvlMsg3,
+    @Default('') required String trnsitCo,
+    @Default('') required String barvlDt,
   }) = _SubwayInfo;
-  
-  factory SubwayInfo.fromJson(Map<String, Object?> json) => _$SubwayInfoFromJson(json);
+
+  factory SubwayInfo.fromJson(Map<String, Object?> json) =>
+      _$SubwayInfoFromJson(json);
 }
