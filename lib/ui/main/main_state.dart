@@ -10,7 +10,7 @@ part 'main_state.g.dart';
 @freezed
 class MainState with _$MainState {
   const factory MainState({
-    @Default([]) List<SubwayInfo> subwayArrivalInfoList,
+    @Default([]) List<SubwayInfo> subwayInfoList,
     @Default(false) bool isLoading,
   }) = _MainState;
 

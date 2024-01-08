@@ -8,10 +8,10 @@ class SubwayInfoImpl implements SubwayInfoRepository {
   SubwayInfoImpl(this._subwayApi);
 
   @override
-  Future<SubwayInfo> getSubwayInfoList(String query) async {
+  Future<List<SubwayInfo>> getSubwayInfoList(String query) async {
     try {
       final response = await _subwayApi.getSubwayInfoList(query);
-      return SubwayInfo.fromJson(response as Map<String, Object?>);
+      return response.map((e) => SubwayInfo.fromJson(e)).toList();
     } catch (e) {
       throw Exception('subway info');
     }

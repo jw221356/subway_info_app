@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:subway_info_app/data/model/subway_info.dart';
+
 
 class SubwayApi {
   Future<List<dynamic>> getSubwayInfoList(String query) async {

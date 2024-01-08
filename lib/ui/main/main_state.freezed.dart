@@ -20,8 +20,7 @@ MainState _$MainStateFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$MainState {
-  List<SubwayInfo> get subwayArrivalInfoList =>
-      throw _privateConstructorUsedError;
+  List<SubwayInfo> get subwayInfoList => throw _privateConstructorUsedError;
   bool get isLoading => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -35,7 +34,7 @@ abstract class $MainStateCopyWith<$Res> {
   factory $MainStateCopyWith(MainState value, $Res Function(MainState) then) =
       _$MainStateCopyWithImpl<$Res, MainState>;
   @useResult
-  $Res call({List<SubwayInfo> subwayArrivalInfoList, bool isLoading});
+  $Res call({List<SubwayInfo> subwayInfoList, bool isLoading});
 }
 
 /// @nodoc
@@ -51,13 +50,13 @@ class _$MainStateCopyWithImpl<$Res, $Val extends MainState>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subwayArrivalInfoList = null,
+    Object? subwayInfoList = null,
     Object? isLoading = null,
   }) {
     return _then(_value.copyWith(
-      subwayArrivalInfoList: null == subwayArrivalInfoList
-          ? _value.subwayArrivalInfoList
-          : subwayArrivalInfoList // ignore: cast_nullable_to_non_nullable
+      subwayInfoList: null == subwayInfoList
+          ? _value.subwayInfoList
+          : subwayInfoList // ignore: cast_nullable_to_non_nullable
               as List<SubwayInfo>,
       isLoading: null == isLoading
           ? _value.isLoading
@@ -75,7 +74,7 @@ abstract class _$$MainStateImplCopyWith<$Res>
       __$$MainStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({List<SubwayInfo> subwayArrivalInfoList, bool isLoading});
+  $Res call({List<SubwayInfo> subwayInfoList, bool isLoading});
 }
 
 /// @nodoc
@@ -89,13 +88,13 @@ class __$$MainStateImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subwayArrivalInfoList = null,
+    Object? subwayInfoList = null,
     Object? isLoading = null,
   }) {
     return _then(_$MainStateImpl(
-      subwayArrivalInfoList: null == subwayArrivalInfoList
-          ? _value._subwayArrivalInfoList
-          : subwayArrivalInfoList // ignore: cast_nullable_to_non_nullable
+      subwayInfoList: null == subwayInfoList
+          ? _value._subwayInfoList
+          : subwayInfoList // ignore: cast_nullable_to_non_nullable
               as List<SubwayInfo>,
       isLoading: null == isLoading
           ? _value.isLoading
@@ -109,21 +108,20 @@ class __$$MainStateImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$MainStateImpl with DiagnosticableTreeMixin implements _MainState {
   const _$MainStateImpl(
-      {final List<SubwayInfo> subwayArrivalInfoList = const [],
+      {final List<SubwayInfo> subwayInfoList = const [],
       this.isLoading = false})
-      : _subwayArrivalInfoList = subwayArrivalInfoList;
+      : _subwayInfoList = subwayInfoList;
 
   factory _$MainStateImpl.fromJson(Map<String, dynamic> json) =>
       _$$MainStateImplFromJson(json);
 
-  final List<SubwayInfo> _subwayArrivalInfoList;
+  final List<SubwayInfo> _subwayInfoList;
   @override
   @JsonKey()
-  List<SubwayInfo> get subwayArrivalInfoList {
-    if (_subwayArrivalInfoList is EqualUnmodifiableListView)
-      return _subwayArrivalInfoList;
+  List<SubwayInfo> get subwayInfoList {
+    if (_subwayInfoList is EqualUnmodifiableListView) return _subwayInfoList;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_subwayArrivalInfoList);
+    return EqualUnmodifiableListView(_subwayInfoList);
   }
 
   @override
@@ -132,7 +130,7 @@ class _$MainStateImpl with DiagnosticableTreeMixin implements _MainState {
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'MainState(subwayArrivalInfoList: $subwayArrivalInfoList, isLoading: $isLoading)';
+    return 'MainState(subwayInfoList: $subwayInfoList, isLoading: $isLoading)';
   }
 
   @override
@@ -140,7 +138,7 @@ class _$MainStateImpl with DiagnosticableTreeMixin implements _MainState {
     super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'MainState'))
-      ..add(DiagnosticsProperty('subwayArrivalInfoList', subwayArrivalInfoList))
+      ..add(DiagnosticsProperty('subwayInfoList', subwayInfoList))
       ..add(DiagnosticsProperty('isLoading', isLoading));
   }
 
@@ -150,7 +148,7 @@ class _$MainStateImpl with DiagnosticableTreeMixin implements _MainState {
         (other.runtimeType == runtimeType &&
             other is _$MainStateImpl &&
             const DeepCollectionEquality()
-                .equals(other._subwayArrivalInfoList, _subwayArrivalInfoList) &&
+                .equals(other._subwayInfoList, _subwayInfoList) &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading));
   }
@@ -158,7 +156,7 @@ class _$MainStateImpl with DiagnosticableTreeMixin implements _MainState {
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(_subwayArrivalInfoList), isLoading);
+      const DeepCollectionEquality().hash(_subwayInfoList), isLoading);
 
   @JsonKey(ignore: true)
   @override
@@ -176,14 +174,14 @@ class _$MainStateImpl with DiagnosticableTreeMixin implements _MainState {
 
 abstract class _MainState implements MainState {
   const factory _MainState(
-      {final List<SubwayInfo> subwayArrivalInfoList,
+      {final List<SubwayInfo> subwayInfoList,
       final bool isLoading}) = _$MainStateImpl;
 
   factory _MainState.fromJson(Map<String, dynamic> json) =
       _$MainStateImpl.fromJson;
 
   @override
-  List<SubwayInfo> get subwayArrivalInfoList;
+  List<SubwayInfo> get subwayInfoList;
   @override
   bool get isLoading;
   @override

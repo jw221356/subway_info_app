@@ -19,8 +19,7 @@ class MainViewModel extends ChangeNotifier {
     _state = state.copyWith(isLoading: true);
     notifyListeners();
 
-    final subwayInfoList =
-    await _repository.getSubwayInfoList(query);
+    final subwayInfoList = await _repository.getSubwayInfoList(query);
     _state = state.copyWith(
       subwayInfoList: subwayInfoList,
       isLoading: false,

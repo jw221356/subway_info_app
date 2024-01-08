@@ -8,7 +8,7 @@ part of 'main_state.dart';
 
 _$MainStateImpl _$$MainStateImplFromJson(Map<String, dynamic> json) =>
     _$MainStateImpl(
-      subwayArrivalInfoList: (json['subwayArrivalInfoList'] as List<dynamic>?)
+      subwayInfoList: (json['subwayInfoList'] as List<dynamic>?)
               ?.map((e) => SubwayInfo.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
@@ -17,6 +17,6 @@ _$MainStateImpl _$$MainStateImplFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$MainStateImplToJson(_$MainStateImpl instance) =>
     <String, dynamic>{
-      'subwayArrivalInfoList': instance.subwayArrivalInfoList,
+      'subwayInfoList': instance.subwayInfoList,
       'isLoading': instance.isLoading,
     };
