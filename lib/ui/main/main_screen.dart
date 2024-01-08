@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:subway_info_app/ui/main/main_view_model.dart';
+import 'package:subway_info_app/ui/widget/subway_line_color.dart';
+import 'package:subway_info_app/ui/widget/subway_line_string.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -51,15 +53,15 @@ class _MainScreenState extends State<MainScreen> {
                             height: 80,
                             width: 80,
                             decoration: BoxDecoration(
-                              color: Colors.grey[600],
+                              color: LineColor(e.subwayId),
                               borderRadius: BorderRadius.circular(12),
                             ),
-                            child: Center(child: Text(e.statnNm!)),
+                            child: Center(child: Text(LineString(e.subwayId ?? ''))),
                           ),
-                          title: Text((e.statnNm!)),
-                          subtitle: Text(e.trainLineNm!),
+                          title: Text((e.statnNm ?? '')),
+                          subtitle: Text(e.trainLineNm ?? ''),
                           trailing: Container(
-                            child: Text(e.barvlDt!),
+                            child: Text(e.barvlDt ?? ''),
                           ),
                         ),
                       ],

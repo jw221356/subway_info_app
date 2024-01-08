@@ -8,6 +8,7 @@ part of 'subway_info.dart';
 
 _$SubwayInfoImpl _$$SubwayInfoImplFromJson(Map<String, dynamic> json) =>
     _$SubwayInfoImpl(
+      subwayId: json['subwayId'] as String?,
       updnLine: json['updnLine'] as String?,
       statnNm: json['statnNm'] as String?,
       trainLineNm: json['trainLineNm'] as String?,
@@ -15,10 +16,12 @@ _$SubwayInfoImpl _$$SubwayInfoImplFromJson(Map<String, dynamic> json) =>
       arvlMsg3: json['arvlMsg3'] as String?,
       trnsitCo: json['trnsitCo'] as String?,
       barvlDt: json['barvlDt'] as String?,
+      arvlCd: json['arvlCd'] as String?,
     );
 
 Map<String, dynamic> _$$SubwayInfoImplToJson(_$SubwayInfoImpl instance) =>
     <String, dynamic>{
+      'subwayId': instance.subwayId,
       'updnLine': instance.updnLine,
       'statnNm': instance.statnNm,
       'trainLineNm': instance.trainLineNm,
@@ -26,4 +29,5 @@ Map<String, dynamic> _$$SubwayInfoImplToJson(_$SubwayInfoImpl instance) =>
       'arvlMsg3': instance.arvlMsg3,
       'trnsitCo': instance.trnsitCo,
       'barvlDt': instance.barvlDt,
+      'arvlCd': instance.arvlCd,
     };
